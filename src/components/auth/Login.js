@@ -1,13 +1,21 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import toastr from 'toastr'
+import Particles from 'react-particles-js';
+import configPart from '../../assets/particles.json'
+import Typekit from 'react-typekit';
+
+const particleOpt= configPart
 
 
 const url = 'http://localhost:3000/login'
 
 class Login extends Component{
     state={
-        auth:{}
+        auth:{
+            email:'',
+            password:'',
+        }
     }
 
 
@@ -41,29 +49,44 @@ onChange = (e) =>{
 render() {
     const{auth} = this.state
     return(
+    <div className="contenedorPart">
+        <div className="contenedorGeneral">
+                
+        <div className="contendorformulario">
+            <h1 className="titulo">Inicia sesión</h1>
+            <div className="formulario">
         <form onSubmit={this.login}>
         <p>
+            Tu email.
+            <br/>
             <input 
                 name="email" 
                 type="email"
                 onChange={this.onChange}
                 value={auth.email}
-                placeholder="tu correo"
             />
         </p>
 
         <p>
+        Tu contraseña.
+                        <br/>
             <input 
                 name="password" 
                 type="password"
                 onChange={this.onChange}
                 value={auth.password}
-                placeholder="tu contraseña"
             />
         </p>
         <button type="submit">Inicia sesión</button>
         
         </form>
+        </div>
+    </div>
+    </div>
+            <Particles params={particleOpt}/>
+            <Typekit kitId="vgf7sax" />
+
+    </div>
     )
 }
 }

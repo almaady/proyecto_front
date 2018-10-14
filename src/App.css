@@ -1,3 +1,7 @@
+*{
+  margin:0;
+}
+/* 
 .App {
   text-align: center;
 }
@@ -29,4 +33,341 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.titulo{
+font-family: 'Merriweather', serif;
+color:white;
+font-size: 60px;
+z-index: 1;
+background-color: #282c34;
 }
+
+.contenedorPart{
+  background-color: #282c34;
+  height:100vh;
+  width:100vw;
+  position: relative;
+}
+
+
+.nav{
+  background-color: #F0FFF1;
+  height:50px;
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  position:fixed;
+  z-index:3;
+  font-family:'Open Sans'
+}
+
+.links{
+  padding:5px;
+  margin: 0 100px;
+  display: flex;
+  /* justify-content: space-around; */
+  color:#282c34;
+}
+
+.links a{
+  text-decoration: none;
+  color:#282c34;
+  margin:0 20px;
+}
+
+.xl{
+  height:150vh !important;
+}
+
+.contenedorGeneral{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  /* height:100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:50px 0 10px 0;
+}
+.contendorformulario{
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:50px 0 10px 0;
+}
+
+.contenedorFormularioPartido{
+  z-index: 2;
+  width: 80%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px 0 10px 0;
+  
+}
+
+.contenedorForm{
+  background-color:#F0FFF1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:20px;
+  padding:20px 0;
+  width:70%;
+}
+
+.contenedorForm h1{
+  font-family:'Open Sans';
+}
+
+.formulario{
+margin:20px 0;
+padding:50px 0 0 0;
+/* background-color: #383E49; */
+width:50%;
+height:80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+color:white;
+font-size: 20px;
+}
+
+.formularioP{
+  margin:20px 0;
+  padding:50px 0 0 0;
+  /* background-color: #383E49; */
+  width:70%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#282c34;
+  font-size: 20px;
+  font-family:'Open Sans';
+  }
+
+  .formularioP p{
+    font-family:'Bagatela';
+    font-weight:600;
+  }
+
+  .formularioP input {
+    padding:2px;
+    margin:5px 0;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #282c34;
+    color:#282c34;
+    margin:15px 0;
+    padding:5px;
+    width:300px;
+    font-size: 16px;
+    font-family:'Open Sans';
+  }
+  .formularioP select{
+    padding:2px;
+    margin:5px 0;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #282c34;
+    color:#282c34;
+    margin:15px 0;
+    padding:5px;
+    width:300px;
+    font-size: 16px;
+    font-family:'Open Sans';
+  }
+
+  .formularioP textarea{
+    padding:2px;
+    margin:5px 0;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #282c34;
+    color:#282c34;
+    margin:15px 0;
+    padding:5px;
+    width:300px;
+    font-size: 16px;
+    font-weight:100;
+    font-family: 'Bagatela'
+  }
+
+  .formularioP button{
+    margin: 15px 0;
+    width:310px;
+    height: 50px;
+    background-color: #87B6A7;
+    color:#282c34;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color:transparent;
+    font-family:'Open Sans';
+  }
+  
+
+.formulario input{
+  padding:2px;
+  margin:5px 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: white;
+  color:white;
+  margin:15px 0;
+  padding:5px;
+  width:300px;
+  font-size: 16px;
+}
+
+.formulario button{
+  margin: 15px 0;
+  width:310px;
+  height: 50px;
+  background-color: #F0FFF1;
+  color:#383E49;
+  font-size: 20px;
+  border-radius: 5px;
+
+}
+
+.perfil{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:90px 0 10px 0;
+}
+
+.cardPerfil{
+  background: #F0FFF1;
+  width:80%;
+  padding:20px 20px 30px ;
+  display: flex;
+  flex-direction: column;
+}
+
+.datosPerfil{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height: 40%;
+  justify-content:space-around;
+  width:100%;
+  font-family: 'Open Sans';
+  
+}
+
+.datosPerfil h1{
+  font-family: 'Open Sans';
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.datosPerfil span{
+  font-weight:100;
+}
+
+.crear{
+  display:flex;
+  flex-direction: row;
+  margin: 0 0 0 20px;
+}
+.linkPerfil{
+  text-decoration: none;
+}
+.favsPerfil{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.favsPerfil div{
+  width:40%;
+  height:100%;
+}
+
+.fav{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+.fav h2{
+font-family: 'Bagatela';
+}
+.favTitulo{
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  width: 20% !important;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.favTitulo p{
+width:200% !important;
+margin: 60px 10px;
+transform: rotate(270deg);
+font-family: 'Open Sans';
+}
+
+.favDescripcion{
+  font-family: 'Bagatela';
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  width:80% !important;
+}
+
+.favDescripcion h2{
+  font-family: 'Bagatela';
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  width:80% !important;
+  margin: 10px 0;
+  opacity: 0.4;
+
+}
+
+#jugador{
+  font-weight: 800;
+  margin: 80px 10px;
+}
+
+#minuto{
+  margin: 0px 10px 20px 10px;
+}
+
+.division1{
+  width: 1px !important;
+  background-color: #282c34;
+  height: 300px !important;
+  margin: 80px 50px;
+  z-index:3;
+  padding:20px 0;
+}
+
+.tituloSeccion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Merriweather', serif;
+  padding:0 30px;
+  margin-top: 20px;
+}
+
+
+
