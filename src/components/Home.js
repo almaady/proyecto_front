@@ -4,7 +4,7 @@ import React, {Component} from 'react'
 import HomeDisplay from './HomeDisplay'
 
 
-// const url = 'http://localhost:3000/login'
+// const url = 'https://recordis.herokuapp.com/login'
 
 class Home extends Component{
 

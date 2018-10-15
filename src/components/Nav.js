@@ -6,7 +6,7 @@ import Typekit from 'react-typekit';
 
 
 
-// const url = 'http://localhost:3000/'
+// const url = 'https://recordis.herokuapp.com/'
 
 class Nav extends Component{
     state={

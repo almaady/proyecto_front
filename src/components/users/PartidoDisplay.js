@@ -7,7 +7,7 @@ import React, {Component} from 'react'
 
 // const particleOpt= configPart
 
-// const url = 'http://localhost:3000/partido'
+// const url = 'https://recordis.herokuapp.com/partido'
 
 class PartidoDisplay extends Component{
     state={
@@ -49,7 +49,7 @@ onChange = (e) =>{
 crearPartido = (e)=>{
     e.preventDefault()
     const {parti} = this.state
-    fetch('http://localhost:3000/partido', {
+    fetch('https://recordis.herokuapp.com/partido', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

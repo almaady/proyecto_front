@@ -11,7 +11,7 @@ import '../Home.css'
 
 const particleOpt= configPart
 
-// const url = 'http://localhost:3000/'
+// const url = 'https://recordis.herokuapp.com/'
 
 class HomeDisplay extends Component{
     state={
@@ -43,7 +43,7 @@ componentWillMount(){
         .catch(e=>toastr.error("no pude traer tus partidos"))
     }
 //  getHome=()=>{
-//      Axios.get('http://localhost:3000/',)
+//      Axios.get('https://recordis.herokuapp.com/',)
 //      .then(res=>{
 //          console.log(res.data)
 //          this.setState({gol:res.data})

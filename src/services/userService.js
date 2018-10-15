@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "http://localhost:3000/"
+const url = "https://recordis.herokuapp.com/"
 
 export const getInfo = () =>{
     axios.get( url + 'profile',{

@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 // import toastr from 'toastr'
 
 
-// const url = 'http://localhost:3000/gol'
+// const url = 'https://recordis.herokuapp.com/gol'
 
 class GolDisplay extends Component{
     state={
@@ -46,7 +46,7 @@ onChange = (e) =>{
 crearGol = (e)=>{
     e.preventDefault()
     const {gol} = this.state
-    fetch('http://localhost:3000/gol', {
+    fetch('https://recordis.herokuapp.com/gol', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

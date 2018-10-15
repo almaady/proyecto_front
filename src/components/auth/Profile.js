@@ -24,7 +24,7 @@ componentWillMount(){
 }
 
 getInfo=()=>{
-    axios.get('http://localhost:3000/profile',{
+    axios.get('https://recordis.herokuapp.com/profile',{
         headers:{
             "Authorization" : localStorage.getItem('token')
         }

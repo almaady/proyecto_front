@@ -8,7 +8,7 @@ import Typekit from 'react-typekit';
 const particleOpt= configPart
 
 
-const url = 'http://localhost:3000/login'
+const url = 'https://recordis.herokuapp.com/login'
 
 class Login extends Component{
     state={
