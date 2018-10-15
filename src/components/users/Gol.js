@@ -30,7 +30,7 @@ render(){
             <div className="contenedorGeneral">
                 <div className="contenedorForm">
                 <h1><Link style={{ textDecoration: 'none', color:'#282c34', display:"block", textTransform:"capitalize"}} to="/profile">{user.username}</Link></h1>
-        <GolDisplay/>
+        <GolDisplay {...this.props}/>
         </div>
             </div>
         <Particles params={particleOpt}/>

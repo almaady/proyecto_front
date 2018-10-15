@@ -55,7 +55,7 @@ crearGol = (e)=>{
         body: JSON.stringify(gol)
     })
     .then(r => r.json())
-    .then(res => console.log(res))
+    .then(res => this.props.history.push('/profile'))
     .catch(err => console.log(err))
 
 }

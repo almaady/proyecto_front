@@ -59,10 +59,9 @@ class Signup extends Component{
         const {signup, teams} = this.state
         if(!teams) return <p>Loading. . .</p>
         return(
-        <div className="contenedorPart">
-            <div className="contenedorForm">  
+        <div className="contenedorPart xl">  
             <div className="contendorformulario">
-                <h1 className="titulo">Cuentános tus historias, regístrate...</h1>
+                <h1 className="titulo">Regístrate...</h1>
                 <div className="formulario">
                     <form onSubmit={this.createUser}>
                     <p>
@@ -115,7 +114,6 @@ class Signup extends Component{
                     <button type="submit">Regístrarse</button>
                 </p>
                     </form>
-                </div>
                 </div>
             </div>
             <Particles params={particleOpt}/>

@@ -1,0 +1,94 @@
+.info{
+    width:100vw;
+    height: 60vh;
+    background-color:transparent;
+    color:white;
+    display:block;
+    justify-content: center;
+    width:80%;
+    margin-top:50px;
+ 
+}
+
+#tit:before{
+    content: 'Original Text';
+    font-size: 90px;
+    animation-name: head;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head {
+    0% {display:inherit; content: "¿Recuerdas tu partido favorito?"}
+    /* 25% { opacity:0;} */
+    50% {display:none; }
+    /* 65% {opacity:0;}
+    80% {opacity:1; }
+    90% {opacity:0;} */
+    100% {display:inherit; content: "O ¿ese gol que te hizo tan feliz?"}
+}
+
+
+.info h2{
+    color:white;
+
+
+}
+.info h1{
+    color:white;
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 5px;
+}
+
+.titulo{
+}
+.titulo h2{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: -10px;
+}
+
+.typewriter {
+    width:50%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+  
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+  
+
+  .boton{
+      display:block;
+      height:10vh;
+    }
+
+    .seccion{
+        font-size:60px;
+        color:white;
+        margin-top: 50px;
+    }
+
+    .seccion2{
+        font-size:30px;
+        font-family: 'Open Sans';
+        color: grey;
+    }

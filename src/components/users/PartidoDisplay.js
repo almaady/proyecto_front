@@ -58,7 +58,7 @@ crearPartido = (e)=>{
         body: JSON.stringify(parti)
     })
     .then(r => r.json())
-    .then(res => console.log(res))
+    .then(res => this.props.history.push('/profile'))
     .catch(err => console.log(err))
 
 }
