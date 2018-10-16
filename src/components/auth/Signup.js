@@ -52,6 +52,7 @@ class Signup extends Component{
             console.log(user)
             toastr.success('Usuario Creado')
         })
+        .then(res => this.props.history.push('/login'))
         .catch(e=>toastr.error('Noup!'))
     }
 

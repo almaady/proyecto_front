@@ -65,8 +65,8 @@ render(){
                 <div className="favsPerfil"> 
                 <div className="fav">
                 <div className="favTitulo">
-            <p> <b>{user.partido ? user.partido.marcadorL:''}  </b> )  {user.partido ? user.partido.equipo1:''} </p>
-                <p>{user.partido ? user.partido.equipo2:''}   ( <b>{user.partido ? user.partido.marcadorV:''} </b>  |</p>
+            <p> <b>{user.partido ? user.partido.marcadorL : ''}  </b> )  {user.partido ? user.partido.equipo1:''} </p>
+                <p>{user.partido ? user.partido.equipo2 : ''}   ( <b>{user.partido ? user.partido.marcadorV:''} </b>  |</p>
                 </div>
                 <div className="favDescripcion">
                     <h2>Mi partido favorito es...</h2>

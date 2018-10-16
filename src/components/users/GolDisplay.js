@@ -9,7 +9,7 @@ class GolDisplay extends Component{
     state={
         gol:{
             partidoDate:'',
-            equipo1:[],
+            equipo1:'',
             equipo2:'',
             descripcion:'',
             jugador:'',
@@ -29,7 +29,7 @@ componentWillMount() {
     })
     .then(res => res.json())
     .then(results => {
-        //console.log(results.Teams)
+        console.log(results.Teams)
         this.setState({teams: results.Teams})
     })
     .catch(err => console.log(err))
